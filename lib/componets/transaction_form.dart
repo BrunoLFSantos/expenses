@@ -31,7 +31,7 @@ class TransactionForm extends StatelessWidget {
                         TextButton(
                           onPressed: (){
                             final title = titleController.text;
-                            final value = double.parse(valueController.text) ?? 0.0;
+                            final value = double.parse(valueController.text);
                             onSubmit(title, value);
                           },
                           child: Text('Nova Transação', 
